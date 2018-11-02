@@ -5,8 +5,8 @@
 // @description  try to take over the world!
 // @author       lihang1329@gmail.com
 // @include      *https://96xxzfl.com*
-// @supportURL https://jq.qq.com/?_wv=1027&k=5Y328gF
-// @require http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js
+// @supportURL https://github.com/LiHang941/tampermonkey_srcript
+// @require https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js
 // @grant        none
 // ==/UserScript==
 
