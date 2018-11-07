@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         96xxzfl.com宅福利自动下一页
-// @namespace    http://tampermonkey.net/
+// @namespace    https://github.com/LiHang941/tampermonkey_srcript/
 // @version      0.4
 // @description  try to take over the world!
 // @author       lihang1329@gmail.com
