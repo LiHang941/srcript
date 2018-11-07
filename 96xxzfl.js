@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         96xxzfl.com宅福利自动下一页
 // @namespace    https://github.com/LiHang941/tampermonkey_srcript/
-// @version      0.6
+// @version      0.51
 // @description  try to take over the world!
 // @author       lihang1329@gmail.com
 // @include      *https://96xxzfl.com*
@@ -155,9 +155,11 @@
             var match = reg.exec(res);
             while (match != null) {
                 $(".article-content p").last().after('<p><img src="'+match[1]+'"></p>');
+                $(".article-content").find('img').last().addpowerzoom({magnifiersize:[500,500],powerrange:[3,3]});
                 //console.log(match[2]);
                 match =  reg.exec(res);
             }
+
             match = nextReg.exec(res);
             if(match != null) {
                 next(match[1]);
