@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         96xxzfl.com宅福利自动下一页
 // @namespace    http://tampermonkey.net/
-// @version      0.2
+// @version      0.4
 // @description  try to take over the world!
 // @author       lihang1329@gmail.com
 // @include      *https://96xxzfl.com*
@@ -21,8 +21,6 @@
                 next($(this).attr('href'));
             }
         });
-
-        var flag = false;
         $(window).keydown(function(event){
             var y = window.screen.availHeight;
             if(event.keyCode === 37 ){
@@ -32,17 +30,34 @@
             } else {return;}
             $("html,body").scrollTop(y);
         });
+        $(document).scroll(function(){
+            var top=$(document).scrollTop();
+            if(top > 100){
+                $('.header').fadeOut(100);
+            } else{
+                $('.header').fadeIn(100);
+            }
+        });
+        $(document).mousemove(function(e) {
+            var top = e.originalEvent.y || e.originalEvent.layerY || 0;
+            if(top > 100){
+                $('.header').fadeOut(100);
+            } else{
+                $('.header').fadeIn(100);
+            }
+        });
+
     });
 
     function next(url){
-        console.log(url);
+        //console.log(url);
         $.get(url,function(res){
             var nextReg = /<li class='next-page'><a href='(.+)'>(.+)<\/a><\/li>/g;
             var reg =/<img.+src="(.+)"\s+\/>\s*<\/p>/g;
             var match = reg.exec(res);
             while (match != null) {
                 $(".article-content p").last().after('<p><img src="'+match[1]+'"></p>');
-                console.log(match[2]);
+                //console.log(match[2]);
                 match =  reg.exec(res);
             }
             match = nextReg.exec(res);
