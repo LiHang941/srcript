@@ -12,7 +12,7 @@
 '工作日自启软件路径
 workFilePath = array( _		
 		"""C:\Program Files (x86)\Google\Chrome\Application\chrome.exe""" _	
-		,"""C:\Program Files\JetBrains\IntelliJ IDEA 2018.2.5\bin\idea64.exe""" _
+		,"""C:\Program Files\JetBrains\IntelliJ IDEA 2018.3\bin\idea64.exe""" _
 		,"""D:\Program Files (x86)\Tencent\QQ\Bin\QQScLauncher.exe""" _
 		,"""D:\Program Files (x86)\Tencent\WeChat\WeChat.exe""" _
 	)
@@ -25,7 +25,7 @@ festivalFilePath = array( _
 	)	
 	
 '节假日数据文件
-festival = "F:\学习资料\工具\工具库\开机脚本\2018节假日.txt" 
+festival = "F:\学习资料\工具\srcript\开机脚本\2018节假日.txt" 
 
 '==========需要修改的内容结束=============
 
