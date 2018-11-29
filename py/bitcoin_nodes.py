@@ -25,8 +25,8 @@ def to_conf(_list):
 if __name__ == '__main__':
     nodes = get_all_data()
 
-    _list = list(
-        filter(lambda x: re.match("\d+\.\d+\.\d+\.\d+", x) is not None and nodes[x][7] == 'CN', nodes.keys()))
+    #_list = list(filter(lambda x: re.match("\d+\.\d+\.\d+\.\d+", x) is not None and nodes[x][7] == 'CN', nodes.keys()))
+    _list = list(filter(lambda x: re.match("\d+\.\d+\.\d+\.\d+", x) is not None , nodes.keys()))
 
     with open('bitcoin.conf', 'w', encoding='UTF-8') as f2:
         f2.write(to_conf(_list))
