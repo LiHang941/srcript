@@ -1,5 +1,5 @@
 '自启vbs脚本工具
-'依赖文件 2018节假日.txt
+'依赖文件 2019.txt
 '使用
 '按键win+r -> 输入 shell:startUp -> 弹出 文件夹 -> 把vbs文件放入该路径
 '路径最后使用""" 因为有的路径中存在空格
@@ -25,7 +25,7 @@ festivalFilePath = array( _
 	)	
 	
 '节假日数据文件
-festival = "F:\学习资料\工具\srcript\开机脚本\2018节假日.txt" 
+festival = ".\2019.txt" 
 
 '==========需要修改的内容结束=============
 
@@ -38,10 +38,10 @@ DO While festivalFile.AtEndOfStream <> True
 	lineStr= festivalFile.ReadLine 	
 	if (currentDate = left(lineStr,8)) then 
 		if (right(lineStr,1) = 0 and hour(now) >= 8 and hour(now) <= 16) then 
-			'MsgBox "工作日"
+			MsgBox "工作日"
 			startUp(workFilePath) 
 		else
-			'MsgBox " 1 休息日 、 2 节假日"
+			MsgBox " 1 休息日 、 2 节假日"
 			startUp(festivalFilePath) 
 		end if 
 	end If
