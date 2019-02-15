@@ -12,7 +12,7 @@
 // ==/UserScript==
 
 (function() {
-    if(!/https:\/\/96xx2019.com\/.+\/\d+\.html(.*?)/.test(window.location.href)){
+    if(!/https:\/\/96mm.net\/.+\/\d+\.html(.*?)/.test(window.location.href)){
         return;
     }
     $(function(){
