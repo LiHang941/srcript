@@ -38,10 +38,10 @@ DO While festivalFile.AtEndOfStream <> True
 	lineStr= festivalFile.ReadLine 	
 	if (currentDate = left(lineStr,8)) then 
 		if (right(lineStr,1) = 0 and hour(now) >= 8 and hour(now) <= 16) then 
-			MsgBox "工作日"
+			'MsgBox "工作日"
 			startUp(workFilePath) 
 		else
-			MsgBox " 1 休息日 、 2 节假日"
+			'MsgBox " 1 休息日 、 2 节假日"
 			startUp(festivalFilePath) 
 		end if 
 	end If
