@@ -2,17 +2,17 @@
 // @name         96xxzfl.com宅福利自动加载下一页,放大,左右键快速滚动
 // @description  96xxzfl.com宅福利自动加载下一页,放大,左右键快速滚动.更多功能欢迎提交issues
 // @namespace    https://github.com/LiHang941/srcript/
-// @version      0.59
+// @version      0.60
 // @description  try to take over the world!
 // @author       lihang1329@gmail.com
-// @include      *https://96mm.net*
+// @include      *https://96aa.net*
 // @supportURL https://github.com/LiHang941/srcript
 // @require https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js
 // @grant        none
 // ==/UserScript==
 
 (function() {
-    if(!/https:\/\/96mm.net\/.+\/\d+\.html(.*?)/.test(window.location.href)){
+    if(!/https:\/\/96aa.net\/.+\/\d+\.html(.*?)/.test(window.location.href)){
         return;
     }
     $(function(){
