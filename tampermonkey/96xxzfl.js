@@ -2,7 +2,7 @@
 // @name         96xxzfl.com宅福利自动加载下一页,放大,左右键快速滚动
 // @description  96xxzfl.com宅福利自动加载下一页,放大,左右键快速滚动.更多功能欢迎提交issues
 // @namespace    https://github.com/LiHang941/srcript/
-// @version      0.61
+// @version      0.62
 // @description  try to take over the world!
 // @author       lihang1329@gmail.com
 // @include      *https://uc96xx.net*
@@ -12,7 +12,7 @@
 // ==/UserScript==
 
 (function() {
-    if(!/https:\/\/96aa.net\/.+\/\d+\.html(.*?)/.test(window.location.href)){
+    if(!/https:\/\/uc96xx.net\/.+\/\d+\.html(.*?)/.test(window.location.href)){
         return;
     }
     $(function(){
@@ -149,7 +149,7 @@
     });
 
     function next(url){
-        //console.log(url);
+       console.log(url);
         $.get(url,function(res){
             var nextReg = /<li class='next-page'><a href='(.+)'>(.+)<\/a><\/li>/g;
             var reg =/<img.+src="(.+)"\s+\/>\s*<\/p>/g;
