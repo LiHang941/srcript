@@ -12,11 +12,15 @@
 // ==/UserScript==
 
 (function() {
-    if(!/https:\/\/96vxx.net\/.+\/\d+\.html(.*?)/.test(window.location.href)){
-        return;
-    }
-    $(function(){
+    
+    
+    
 
+    $(function(){
+         if(!/https:\/\/96vxx.net\/.+\/\d+\.html(.*?)/.test(window.location.href)){
+            return;
+        }
+        document.onclick= function(){};
         var ddpowerzoomer={
             dsetting: {defaultpower:2, powerrange:[2,2], magnifiersize:[500, 500]},
             mousewheelevt: (/Firefox/i.test(navigator.userAgent))? "DOMMouseScroll" : "mousewheel", //FF doesn't recognize mousewheel as of FF3.x
