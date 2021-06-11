@@ -2,9 +2,9 @@
 // @name        宅福利去除广告自动加载下一页图片,图片放大,左右键快速滚动
 // @description  宅福利去除广告自动加载下一页图片,图片放大,左右键快速滚动.更多功能欢迎提交issues
 // @namespace    https://github.com/LiHang941/srcript/
-// @version      0.65
+// @version      0.66
 // @author       lihang1329@gmail.com
-// @include      *https://96vxx.net*
+// @include      *https://v.96mxx.com*
 // @supportURL https://github.com/LiHang941/srcript
 // @require https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js
 // @grant        none
@@ -17,7 +17,7 @@
 
     $(function(){
          document.onclick= function(){};
-         if(!/https:\/\/96vxx.net\/.+\/\d+\.html(.*?)/.test(window.location.href)){
+         if(!/https:\/\/v.96mxx.com\/.+\/\d+\.html(.*?)/.test(window.location.href)){
             return;
         }
       
